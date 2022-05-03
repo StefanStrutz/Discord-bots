@@ -1,0 +1,17 @@
+Written by Stefan X. Strutz on 4/24/2022
+
+Before you can run any of the code in this section you will need a discord bot account and
+the discord bot's token. The guide below will walk you through creating a discord bot account.
+https://discordpy.readthedocs.io/en/stable/discord.html
+
+A bot token is a string of numbers that acts like a combination of a username and password for the bot.
+
+Some functions will require a channel ID to tell the bot where to post it's message, but for many the bot
+will simply post in the same channel that triggered the message. You can right-click on a channel to get
+it's ID
+
+A user ID can be used to make a function with a bot only reacts to one user. You can right-click to get 
+the user ID for anyone
+
+For more detail I recommend reading the documents
+https://discordpy.readthedocs.io/en/stable/intro.html
