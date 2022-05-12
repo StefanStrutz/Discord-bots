@@ -32,18 +32,22 @@ async def on_message(message):
 
     if message.content.startswith('!hour'):
         await message.channel.send(time.localtime().tm_hour)
-        
-    if message.content.startswith('!ding'):
-        ding_at = int(message.content[6:8])
-        not_dinged = True
-        while not_dinged:
-            channel = client.get_channel(Channel_number_here)#replace
-            if time.localtime().tm_min==ding_at:
-                    await channel.send('ding')
-                    not_dinged =False
-            else:
-                await asyncio.sleep(24)
-                #await channel.send('dong') # print debug
+    try:  
+        if message.content.startswith('!ding'):
+            ding_at = int(message.content[6:8])
+            not_dinged = True
+            while not_dinged:
+                channel = client.get_channel(926917003665633386)
+                if time.localtime().tm_min==ding_at:
+                        await channel.send('ding')
+                        not_dinged =False
+                else:
+                    await asyncio.sleep(24)
+                    #await channel.send('dong') # print debug
+    except:
+         channel = client.get_channel(926917003665633386)
+         await channel.send("Command must be used in the form !ding ## where the #'s are numbers'")
+
 
 #Starts the event loop.
 client.run('bot_token_here') #replace
