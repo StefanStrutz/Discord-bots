@@ -1,5 +1,4 @@
-#This code will not run even with proper modifications. The readme includes the proper
-#modifications.
+#This code will not run unless it is modified, see readme document
 
 #Written by Stefan X. Strutz on May 1, 2022, last updated on May 9, 2022
 #The purpose of this code is to test interactions between the time and discord module.
